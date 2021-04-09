@@ -44,12 +44,30 @@ public class Estudiante extends Docente {
     
     public void CreatAcc(){
     name = JOptionPane.showInputDialog("Type your first name");
+    while (name == null || name.equals("")){
+    name = JOptionPane.showInputDialog(null, "You have to type your name","Error",JOptionPane.ERROR_MESSAGE);
+    }
     email = JOptionPane.showInputDialog("Type your e-mail");
+    while (email == null || email.equals("")){
+    email = JOptionPane.showInputDialog(null, "You have to type your email","Error",JOptionPane.ERROR_MESSAGE);
+    }
     country = JOptionPane.showInputDialog("Where are you from?");
+    while (country == null || country.equals("")){
+    country = JOptionPane.showInputDialog(null, "You have to type your country","Error",JOptionPane.ERROR_MESSAGE);
+    }
     language = JOptionPane.showInputDialog("What language/s do you speak?");
+    while (language == null || language.equals("")){
+    language = JOptionPane.showInputDialog(null, "You have to type your language","Error",JOptionPane.ERROR_MESSAGE);
+    }
     identification = Integer.parseInt(JOptionPane.showInputDialog("Type your identification number"));
     Create_user = JOptionPane.showInputDialog("Type an username");
+    while (Create_user == null || Create_user.equals("")){
+    Create_user = JOptionPane.showInputDialog(null, "You have to type an username","Error",JOptionPane.ERROR_MESSAGE);
+    }
     Create_pass = JOptionPane.showInputDialog("Type a password");
+    while (Create_pass == null || Create_pass.equals("")){
+    Create_pass = JOptionPane.showInputDialog(null, "You have to type a password","Error",JOptionPane.ERROR_MESSAGE);
+    }
     
     
     String fileName = name+".txt"; // VARIABLE TO CONVERT THE NAME OF THE STUDENT TO A FILE TYPE (.txt)

@@ -47,17 +47,44 @@ public class Docente {
     
     public void CreatAcc(){
     D_NAME = JOptionPane.showInputDialog("Type your full name");
+    while (D_NAME == null || D_NAME.equals("")){
+    D_NAME = JOptionPane.showInputDialog(null, "You have to type your name","Error",JOptionPane.ERROR_MESSAGE);
+    }
     D_EMAIL = JOptionPane.showInputDialog("Type your e-mail");
+    while (D_EMAIL == null || D_EMAIL.equals("")){
+    D_EMAIL = JOptionPane.showInputDialog(null, "You have to type your email","Error",JOptionPane.ERROR_MESSAGE);
+    }
     D_COUNTRY = JOptionPane.showInputDialog("Type your country");
+    while (D_COUNTRY == null || D_COUNTRY.equals("")){
+    D_COUNTRY = JOptionPane.showInputDialog(null, "You have to type your country","Error",JOptionPane.ERROR_MESSAGE);
+    }
     MOT_TONGUE = JOptionPane.showInputDialog("What is your mother tongue?");
+    while (MOT_TONGUE == null || MOT_TONGUE.equals("")){
+    MOT_TONGUE = JOptionPane.showInputDialog(null, "You have to type your mother tongue","Error",JOptionPane.ERROR_MESSAGE);
+    }
     D_LANGUAGE = JOptionPane.showInputDialog("Type the language you want to teach");
+    while (D_LANGUAGE == null || D_LANGUAGE.equals("")){
+    D_LANGUAGE = JOptionPane.showInputDialog(null, "You have to type your language","Error",JOptionPane.ERROR_MESSAGE);
+    }
     D_AVAILABILITY = JOptionPane.showInputDialog("Whats is your availability (days)");
+    while (D_AVAILABILITY == null || D_AVAILABILITY.equals("")){
+    D_AVAILABILITY = JOptionPane.showInputDialog(null, "You have to type your availability","Error",JOptionPane.ERROR_MESSAGE);
+    }
     T_AVAILABILITY = JOptionPane.showInputDialog("Whats is your availability (time)");
+    while (T_AVAILABILITY == null || T_AVAILABILITY.equals("")){
+    T_AVAILABILITY = JOptionPane.showInputDialog(null, "You have to type your availability","Error",JOptionPane.ERROR_MESSAGE);
+    }
     EXPERIENCE = Integer.parseInt(JOptionPane.showInputDialog("How many years have you been teaching this language?"));
     D_IDENTIFICATION = Integer.parseInt(JOptionPane.showInputDialog("Type your identification number"));
     CERTIFICATE = JOptionPane.showConfirmDialog(null, "¿Do you have a certificate for teaching this language?", "Warning!", JOptionPane.YES_NO_OPTION);
     CREATE_D_USER = JOptionPane.showInputDialog("Type an username");
+    while (CREATE_D_USER == null || CREATE_D_USER.equals("")){
+    CREATE_D_USER = JOptionPane.showInputDialog(null, "You have to type a username","Error",JOptionPane.ERROR_MESSAGE);
+    }
     CREATE_D_PASS = JOptionPane.showInputDialog("Type a password");
+    while (CREATE_D_PASS == null || CREATE_D_PASS.equals("")){
+    CREATE_D_PASS = JOptionPane.showInputDialog(null, "You have to type a password","Error",JOptionPane.ERROR_MESSAGE);
+    }
     Requirementes();
     }
     
